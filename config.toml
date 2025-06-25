@@ -1,81 +1,64 @@
-title = "Cloud Innovations"
-logo = "logo.png"
 baseURL = "https://cloudinnovations.hk/"
+title = "Cloud Innovations"
+languageCode = "en-us"
 theme = "airspace-hugo"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
 
-# The site's parameters
 [params]
-  # Google Analytics
-  googleAnalitycsID = "UA-145017939-1"
-  description = "Cloud Innovations - IT Solutions"
+  googleAnalyticsID = "UA-XXXXXXXXX-X" # Replace with your actual GA ID
+  description = "Cloud Innovations – IT Solutions Provider"
   author = "Cloud Innovations"
+  logo = "img/logo.png"
 
-  # If you want to remove the copyright text you need a Themefisher license.
-  # This license is offered with a 50% discount for all Hugo users.
-  # For information see https://github.com/gohugoio/hugoThemes/issues/260
-
-# Multilingual : SL / EN
-[Languages]
-
-  ######## english language
-  [Languages.en]
-    languageName = "En"
-    weight = 2
-    languageCode = "en-us"
-    title = "Cloud Innovations"
-    dateFormat = "January 2, 2006"
-    home = "Home"
-
-    [Languages.en.menu]
-      #[[Languages.en.menu.header]]
-      #  weight = 2
-      #  name = "Team"
-      #  url = "en/team"
-      #[[Languages.en.menu.header]]
-      #  weight = 8
-      #  name = "Contact"
-      #  url = "en/contact"
-
-  # Add more languages as needed
-
-[Languages.en.params.slider]
+[params.slider]
   enable = true
-  title = "Cloud Innovations - Your IT Partner"
-  subtitle = "Empowering your business with cloud and IT solutions"
-  bgImage = "img/slider-bg.jpg"
-  btnText = "Our Services and Expertise"
-  url = "#service"
+  title = "Empowering Your Business with Cloud Solutions"
+  subtitle = "Innovative IT services tailored to your needs."
+  bgImage = "img/hero-cloud.jpg"
+  btnText = "Discover Our Services"
+  url = "#services"
 
-[Languages.en.params.wrapper]
+[params.wrapper]
   enable = true
-  image = "img/kiss2.jpg"
-  title = "The Cloud Innovations Story"
-  italic = "Cloud Innovations is an IT solutions company based in Hong Kong. We specialize in cloud technologies, system integration, and digital transformation for businesses of all sizes."
-  paragraph = "At Cloud Innovations, we believe technology should drive your business forward. Our solutions are designed to be simple, efficient, and scalable, helping you focus on what matters most."
+  image = "img/about-cloud.jpg"
+  title = "About Cloud Innovations"
+  italic = "Leading IT solutions provider"
+  paragraph = "Cloud Innovations helps businesses leverage cloud technology for growth and efficiency. Our solutions are designed to be simple, efficient, and scalable."
 
-[Languages.en.params.contact]
+[params.contact]
   enable = true
-  title = "Drop us a note"
-  subtitle = "Don’t just take our word for it. Check out some of our latest work."
-  [Languages.en.params.contact.form]
+  title = "Get in Touch"
+  subtitle = "Contact us for a consultation or to learn more about our services."
+  [params.contact.form]
     mail = "info@cloudinnovations.hk"
     name = "Your name"
     email = "Your email"
     subject = "Your subject"
     message = "Your message"
     button = "Send message"
-  [Languages.en.params.contact.box]
+  [params.contact.box]
     title = "Cloud Innovations"
     address = "Hong Kong"
     email = "info@cloudinnovations.hk"
-    phone = "Phone: +852 XXXX XXXX"
+    phone = "+852 XXXX XXXX"
 
-        
-      [[Languages.fr.params.contact.social]]
-        icon = "fa-github"
-        link = "#"
-
-      [Languages.fr.params.contact.gmaps]
-        title = "We Also Count in Google Maps"
+[menu]
+  [[menu.main]]
+    weight = 1
+    name = "Home"
+    url = "/"
+  [[menu.main]]
+    weight = 2
+    name = "Services"
+    url = "/services"
+  [[menu.main]]
+    weight = 3
+    name = "About"
+    url = "/about"
+  [[menu.main]]
+    weight = 4
+    name = "Portfolio"
+    url = "/portfolio"
+  [[menu.main]]
+    weight = 5
+    name = "Contact"
+    url = "/contact"
